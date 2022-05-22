@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Get Ip By Host Name</h1>
+    <form method="post">
+        {% if adress %}
+            <h2>{{ hostname }}--{{ adress }}</h2>
+        {% endif %}
+        <input type="text" name="hostname" placeholder="Enter the host name">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
